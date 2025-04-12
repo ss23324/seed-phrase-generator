@@ -90,6 +90,9 @@ Contributions are welcome! If you have ideas, bug reports, or want to contribute
 This project is licensed under the [Apache 2.0 License](/LICENSE)
 
 ## Donate
+
+I encourage you, when you find a wallet with a balance, to send me a small portion as a thank you. This motivates me to keep working on the program, keep it going, and make it better!
+
 **BTC:** bc1qeyrshy5ntsguwxe9m8tp2x2yqhddz7ymkj44h9
 
 **ETH:** 0x76c2E75B92Eb340f01B378e332FC7d8954893693
