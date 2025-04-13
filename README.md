@@ -3,11 +3,11 @@
 **Wallet Gen** is a tool designed for brute force and generating cryptocurrency wallets (such as Bitcoin and EVM-based wallets like ETH, BNB, MATIC, etc.), as well as discovering forgotten or lost wallets that contain an existing balance.
 
 <p align="center">
-    <img width="1000" height="600" src="/assets/gonalva.webp" />
+    <img width="1000" height="460" src="/assets/gonalva.webp" />
 </p>
 
 <p align="center">
-    <img width="1000" height="600" src="/assets/walletgen_linux2.png" />
+    <img width="1000" height="460" src="/assets/walletgen_linux2.png" />
 </p>
 
 ## Overview
