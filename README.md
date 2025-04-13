@@ -3,11 +3,11 @@
 **Wallet Gen** is a tool designed for brute force and generating cryptocurrency wallets (such as Bitcoin and EVM-based wallets like ETH, BNB, MATIC, etc.), as well as discovering forgotten or lost wallets that contain an existing balance.
 
 <p align="center">
-    <img width="820" height="460" src="/assets/gonalva.webp" />
+    <img width="1000" height="600" src="/assets/gonalva.webp" />
 </p>
 
 <p align="center">
-    <img width="820" height="460" src="/assets/walletgen_linux2.png" />
+    <img width="1000" height="600" src="/assets/walletgen_linux2.png" />
 </p>
 
 ## Overview
@@ -23,11 +23,11 @@ For generating EVM wallets (ETH, BNB, MATIC, etc.), Wallet Gen uses the keccak25
 - Search for EVM wallets with a balance.
 
 <p align="center">
-    <img width="820" height="460" src="/assets/fettnannhalf.gif" />
+    <img width="1000" height="460" src="/assets/fettnannhalf.gif" />
 </p>
 
 <p align="center">
-    <img width="820" height="460" src="/assets/walletgen_linux1.png" />
+    <img width="1000" height="460" src="/assets/walletgen_linux1.png" />
 </p>
 
 # Searching for Crypto Wallets
@@ -47,7 +47,7 @@ I’ve personally recovered two BTC wallets with a balance. The first had 0.0000
 Here’s the link to the wallet: [bc1qk3m62hx2hh5mhvc0tj45f9xflzcnu0sur3rvay](https://mempool.space/address/bc1qk3m62hx2hh5mhvc0tj45f9xflzcnu0sur3rvay).
 
 <p align="center">
-    <img width="820" height="460" src="/assets/tocozu.webp" />
+    <img width="1000" height="460" src="/assets/tocozu.webp" />
 </p>
 
 
@@ -56,7 +56,7 @@ Here’s the link to the wallet: [bc1qk3m62hx2hh5mhvc0tj45f9xflzcnu0sur3rvay](ht
 After a week of non-stop wallet searching, I finally found a [wallet](https://mempool.space/address/bc1q29c5m3w4jxtsj4vcd2ccw4t68xm8m7vs5vytu0) with 0.25 bitcoin ($19k). This is my 4th and biggest find of all time.
 
 <p align="center">
-    <img width="820" height="460" src="https://github.com/user-attachments/assets/57f95d59-9da2-44f0-8f66-dbbe7fe69aee" />
+    <img width="1000" height="460" src="https://github.com/user-attachments/assets/57f95d59-9da2-44f0-8f66-dbbe7fe69aee" />
 </p>
 
 
