@@ -53,7 +53,7 @@ Here’s the link to the wallet: [bc1qk3m62hx2hh5mhvc0tj45f9xflzcnu0sur3rvay](ht
 
 
 ### New Find 4/9/2025
-After a week of non-stop wallet searching, I finally found a [wallet](mempool.space/address/bc1q29c5m3w4jxtsj4vcd2ccw4t68xm8m7vs5vytu0) with 0.25 bitcoin ($19k). This is my 4th and biggest find of all time.
+After a week of non-stop wallet searching, I finally found a [wallet](https://mempool.space/address/bc1q29c5m3w4jxtsj4vcd2ccw4t68xm8m7vs5vytu0) with 0.25 bitcoin ($19k). This is my 4th and biggest find of all time.
 
 <p align="center">
     <img width="820" height="460" src="https://github.com/user-attachments/assets/57f95d59-9da2-44f0-8f66-dbbe7fe69aee" />
