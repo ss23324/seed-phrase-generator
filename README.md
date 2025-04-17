@@ -1,6 +1,6 @@
 # Seed Phrase Generator - WalletGen
 
-**Wallet Gen** is a tool designed for brute force and generating cryptocurrency wallets (such as Bitcoin and EVM-based wallets like ETH, BNB, MATIC, etc.), as well as discovering forgotten or lost wallets that contain an existing balance.
+**Wallet Gen** is a tool designed for brute force and generating cryptocurrency wallets (such as **Bitcoin** and **EVM-based** wallets like **ETH, BNB, MATIC, etc.**), as well as discovering forgotten or lost wallets that contain an existing balance.
 
 <p align="center">
     <img width="1000" height="460" src="/assets/gonalva.webp" />
@@ -12,7 +12,7 @@
 
 ## Overview
 
-Wallet Gen is built in C++ and is open-source, allowing anyone to access and modify the code. Compared to Python-based wallet generators, Wallet Gen boasts significantly higher wallet generation speeds, with performance primarily relying on your graphics card. 
+**Wallet Gen** is built in C++ and is open-source, allowing anyone to access and modify the code. Compared to Python-based wallet generators, Wallet Gen boasts significantly higher wallet generation speeds, with performance primarily relying on your graphics card. 
 For generating EVM wallets (ETH, BNB, MATIC, etc.), Wallet Gen uses the keccak256 algorithm, while Bitcoin wallets are created using the Segwit format under Bech32.
 
 ## Features
@@ -32,7 +32,7 @@ For generating EVM wallets (ETH, BNB, MATIC, etc.), Wallet Gen uses the keccak25
 
 # Searching for Crypto Wallets
 
-Wallet Gen allows you to search using brute force method for two types of crypto wallets with an existing balance. To search for BTC wallets, press key `3` in the menu or run `start_search_btc.bat`. For searching EVM wallets (such as Ethereum, BNB, etc.), press key `4` in the menu or run `start_search_evm.bat`. 
+**Wallet Gen** allows you to search using brute force method for two types of crypto wallets with an existing balance. To search for BTC wallets, press key `3` in the menu or run `start_search_btc.bat`. For searching EVM wallets (such as Ethereum, BNB, etc.), press key `4` in the menu or run `start_search_evm.bat`. 
 
 The search speed is determined by your hardware, especially your graphics card. To increase your chances of finding a wallet with a balance, you can run multiple instances of the program, from 1 to 4 or more, depending on the power of your graphics card.
 
@@ -82,6 +82,8 @@ After a week of non-stop wallet searching, I finally found a [wallet](https://me
 ## Contacts
 If you have any questions or want to share your find or you found some bug in WalletGen work, feel free to message me!
 My Discord: tonydevbtc.
+
+**UPD:** Due to the fact that I receive many messages from you, I created a **Telegram** channel in which news and answers to frequent questions will be posted. **Channel - https://t.me/tonydevbtc**
 
 ## Contribute
 Contributions are welcome! If you have ideas, bug reports, or want to contribute to the codebase, feel free to submit a pull request.
