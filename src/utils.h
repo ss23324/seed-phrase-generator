@@ -10,8 +10,8 @@
 #include <bitset>
 #include <cassert>
 
-#include <openssl/sha.h>  // Для SHA256
-#include <openssl/hmac.h> // Для HMAC
+#include <openssl/sha.h>  // SHA256
+#include <openssl/hmac.h> // HMAC
 #include <openssl/ripemd.h>
 #include <openssl/ec.h>
 #include <openssl/ecdsa.h>
