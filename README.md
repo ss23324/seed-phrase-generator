@@ -30,16 +30,15 @@ For generating EVM wallets (ETH, BNB, MATIC, etc.), Wallet Gen uses the keccak25
     <img width="1000" height="460" src="/assets/walletgen_linux1.png" />
 </p>
 
+## Download
+- [Windows x64](../../releases)
+- [Linux](../../releases)
+
 # Searching for Crypto Wallets
 
 **Wallet Gen** allows you to search using brute force method for two types of crypto wallets with an existing balance. To search for BTC wallets, press key `3` in the menu or run `start_search_btc.bat`. For searching EVM wallets (such as Ethereum, BNB, etc.), press key `4` in the menu or run `start_search_evm.bat`. 
 
 The search speed is determined by your hardware, especially your graphics card. To increase your chances of finding a wallet with a balance, you can run multiple instances of the program, from 1 to 4 or more, depending on the power of your graphics card.
-
-## Download
-- [Windows x64](../../releases)
-- [Linux](../../releases)
-
 
 ## My Finds
 
@@ -53,6 +52,7 @@ Here’s the link to the wallet: [bc1qk3m62hx2hh5mhvc0tj45f9xflzcnu0sur3rvay](ht
 
 
 ### New Find 4/9/2025
+
 After a week of non-stop wallet searching, I finally found a [wallet](https://mempool.space/address/bc1q29c5m3w4jxtsj4vcd2ccw4t68xm8m7vs5vytu0) with 0.25 bitcoin ($19k). This is my 4th and biggest find of all time.
 
 <p align="center">
@@ -74,8 +74,6 @@ After a week of non-stop wallet searching, I finally found a [wallet](https://me
 
 3. Start building the project.
 
-
-
 ## Todo
 1. Search for missing words in a seed phrase.
 
@@ -86,10 +84,8 @@ My Discord: tonydevbtc.
 **UPD:** Due to the fact that I receive many messages from you, I created a **Telegram** channel in which news and answers to frequent questions will be posted. **Channel - https://t.me/tonydevbtc**
 
 ## Contribute
-Contributions are welcome! If you have ideas, bug reports, or want to contribute to the codebase, feel free to submit a pull request.
 
-## License
-This project is licensed under the [Apache 2.0 License](/LICENSE)
+Contributions are welcome! If you have ideas, bug reports, or want to contribute to the codebase, feel free to submit a pull request.
 
 ## Donate
 
@@ -98,6 +94,9 @@ I encourage you, when you find a wallet with a balance, to send me a small porti
 **BTC:** bc1qeyrshy5ntsguwxe9m8tp2x2yqhddz7ymkj44h9
 
 **ETH:** 0x76c2E75B92Eb340f01B378e332FC7d8954893693
+
+## License
+This project is licensed under the [Apache 2.0 License](/LICENSE)
 
 ## Topics
 bitcoin, ethereum, crypto, cryptocurrency, crypto seed phrase mining, crypto bruteforce, bitcoin bruteforce, ethereum bruteforce, crypto finder, lost bitcoin, brute force wallet, crypto brute foce, crypto bruteforce, crypto bruteforce wallet, crypto bruteforce key, crypto wallet, crypto wallet recovery, crypto wallet seed generator, crypto wallet seed phrase, crypto wallet tools, wallet finder crypto, wallet recovery seeds, wallet recovery tools.
