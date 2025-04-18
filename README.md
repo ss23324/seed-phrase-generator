@@ -34,6 +34,14 @@ For generating EVM wallets (ETH, BNB, MATIC, etc.), Wallet Gen uses the keccak25
 - [Windows x64](../../releases)
 - [Linux](../../releases)
 
+### Install from Terminal Linux
+```bash
+wget https://github.com/tony-dev-btc/walletgen/releases/download/v1.4.6/walletgen-1.4.6-linux.tar.gz
+tar -xzf walletgen-1.4.6-linux.tar.gz
+cd walletgen
+./walletgen.sh
+```
+
 # Searching for Crypto Wallets
 
 **Wallet Gen** allows you to search using brute force method for two types of crypto wallets with an existing balance. To search for BTC wallets, press key `3` in the menu or run `start_search_btc.bat`. For searching EVM wallets (such as Ethereum, BNB, etc.), press key `4` in the menu or run `start_search_evm.bat`. 
