@@ -195,7 +195,8 @@ void start_search_btc_wallets()
     unsigned long long checked_mnemonics = 0;
     float found_balance = 0.0f;
     int speed = 0, speed_check = 0, mnemonics_by_sec = 0;
-
+    int num = 0;
+    
     while (true) {
         std::string mnemonic = generate_mnemonic(12);
         wallet wal = generate_bitcoin_wallet(mnemonic);
@@ -219,6 +220,12 @@ void start_search_btc_wallets()
         std::string new_title = "[WalletGen] - Seaching for BTC wallets / [Checked mnemonics: " + std::to_string(checked_mnemonics) + " | Found balance: " + std::to_string(found_balance) +
             "$ | Speed: " + std::to_string(speed) + "/s]";
         SetConsoleTitleA(new_title.c_str());
+
+        num++;
+        if(num > 500000){
+            system("cls")
+        }
+        
     }
    
 
@@ -238,7 +245,8 @@ void start_search_evm_wallets()
     unsigned long long checked_mnemonics = 17256100;
     float found_balance = 0.0f;
     int speed = 0, speed_check = 0, mnemonics_by_sec = 0;
-
+    int num = 0;
+    
     while (true) {
 
         std::string mnemonic = generate_mnemonic(12);
@@ -269,6 +277,11 @@ void start_search_evm_wallets()
         std::string new_title = "[WalletGen] - Seaching for EVM wallets / [Checked mnemonics: " + std::to_string(checked_mnemonics) + " | Found balance: " + std::to_string(found_balance) + 
             "$ | Speed: " + std::to_string(speed) + "/s]";
         SetConsoleTitleA(new_title.c_str());
+
+        num++;
+        if(num > 500000){
+            system("cls")
+        }
 
     }
 
