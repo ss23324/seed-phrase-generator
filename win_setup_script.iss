@@ -2,8 +2,8 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "WalletGen"
-#define MyAppVersion "1.4.6"
-#define MyAppPublisher "TonyDev_Btc"
+#define MyAppVersion "1.5.0"
+#define MyAppPublisher "TonyDev-Btc"
 #define MyAppExeName "WalletGen.exe"
 #define MyAppAssocName MyAppName + " File"
 #define MyAppAssocExt ".exe"
