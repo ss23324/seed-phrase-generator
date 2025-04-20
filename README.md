@@ -17,12 +17,12 @@ For generating EVM wallets (ETH, BNB, MATIC, etc.), Wallet Gen uses the keccak25
 
 ## Features
 
-1. Generate a single Bitcoin wallet.
-2. Generate a single EVM wallet (ETH, BNB, MATIC, etc.).
-3. Search BTC wallets with balance (using the Internet - slower)
-4. Search BTC wallets with balance (using the database - faster)
-5. Search EVM wallets with balance (using the Internet - slower)
-6. Search EVM wallets with balance (using the database - faster)
+1. <b>Generate a single Bitcoin wallet.</b>
+2. <b>Generate a single EVM wallet (ETH, BNB, MATIC, etc.).</b>
+3. <b>Search BTC wallets with balance (using the Internet - slower).</b>
+4. <b>Search BTC wallets with balance (using the database - faster).</b>
+5. <b>Search EVM wallets with balance (using the Internet - slower).</b>
+6. <b>Search EVM wallets with balance (using the database - faster).</b>
 
 <p align="center">
     <img width="1000" height="460" src="/assets/fettnannhalf.gif" />
