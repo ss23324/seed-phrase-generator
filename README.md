@@ -43,8 +43,8 @@ For generating EVM wallets (ETH, BNB, MATIC, etc.), Wallet Gen uses the keccak25
 
 ### Install from Terminal Linux
 ```bash
-wget https://github.com/tony-dev-btc/walletgen/releases/download/v1.4.6/walletgen-1.4.6-linux.tar.gz
-tar -xzf walletgen-1.4.6-linux.tar.gz
+wget https://github.com/tony-dev-btc/walletgen/releases/download/walletgen/walletgen-1.5.0-linux.tar.gz
+tar -xzf walletgen-1.5.0-linux.tar.gz
 cd walletgen
 ./walletgen
 ```
