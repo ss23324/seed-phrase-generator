@@ -10,8 +10,9 @@
 #include <bitset>
 #include <cassert>
 
-#include <openssl/sha.h>  // SHA256
-#include <openssl/hmac.h> // HMAC
+
+#include <openssl/sha.h>
+#include <openssl/hmac.h>
 #include <openssl/ripemd.h>
 #include <openssl/ec.h>
 #include <openssl/ecdsa.h>
@@ -20,13 +21,15 @@
 #include <openssl/pem.h>
 #include <openssl/err.h>
 
+#pragma comment (lib, "libssl.lib")
+#pragma comment (lib, "libcrypto.lib")
 
 int base58_encode(const  std::vector<unsigned char> input, int len, unsigned char result[]);
 
 std::string keccak256(const std::string& input);
 std::vector<unsigned char> ripemd160(const std::vector<unsigned char>& data);
 std::vector<unsigned char> sha256(const std::vector<unsigned char>& data);
-std::vector<unsigned char> hmacSha512(const std::string& key, const std::string& message);
+std::vector<unsigned char> hmac_sha512(const std::vector<unsigned char>& key, const std::vector<unsigned char>& data);
 
 
 std::vector<int> create_bech32_checksum(const std::vector<int>& data);
