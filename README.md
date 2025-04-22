@@ -100,10 +100,8 @@ The author is not responsible for any possible actions with any wallets found, u
 This project is licensed under the [Apache 2.0 License](/LICENSE)
 
 ## Contacts
-If you have any questions or want to share your find or you found some bug in WalletGen work, feel free to message me!
-My Discord: tonydevbtc.
 
-**UPD:** Due to the fact that I receive many messages from you, I created a **Telegram** channel in which news and answers to frequent questions will be posted. **Channel - https://t.me/tonydevbtc**
+Due to the fact that I receive many messages from you, I created a **Telegram** channel in which news and answers to frequent questions will be posted. **Channel - https://t.me/tonydevbtc**
 
 ## Contribute
 
