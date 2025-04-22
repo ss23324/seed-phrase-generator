@@ -29,7 +29,7 @@ For generating EVM wallets (ETH, BNB, MATIC, etc.), Wallet Gen uses the keccak25
 </p>
 
 <p align="center">
-    <img witdth="860" src="/assets/walletgen_linux1.png" />
+    <img width="860" src="/assets/walletgen_linux1.png" />
 </p>
 
 ## Downloads
