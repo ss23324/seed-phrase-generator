@@ -3,11 +3,11 @@
 **Wallet Gen** is a tool designed for brute force and generating cryptocurrency wallets (such as **Bitcoin** and **EVM-based** wallets like **ETH, BNB, MATIC, etc.**), as well as discovering forgotten or lost wallets that contain an existing balance.
 
 <p align="center">
-    <img width="1000" height="460" src="/assets/gonalva.webp" />
+    <img width="860" src="/assets/gonalva.webp" />
 </p>
 
 <p align="center">
-    <img width="1000" height="460" src="/assets/walletgen_linux2.png" />
+    <img width="860" src="/assets/walletgen_linux2.png" />
 </p>
 
 ## Overview
@@ -25,11 +25,11 @@ For generating EVM wallets (ETH, BNB, MATIC, etc.), Wallet Gen uses the keccak25
 6. <b>Search EVM wallets with balance (using the database - faster).</b>
 
 <p align="center">
-    <img width="1000" height="460" src="/assets/fettnannhalf.gif" />
+    <img width="860" height="460" src="/assets/fettnannhalf.gif" />
 </p>
 
 <p align="center">
-    <img width="1000" height="460" src="/assets/walletgen_linux1.png" />
+    <img src="/assets/walletgen_linux1.png" />
 </p>
 
 ## Downloads
@@ -61,7 +61,7 @@ I’ve personally recovered two BTC wallets with a balance. The first had 0.0000
 Here’s the link to the wallet: [bc1qk3m62hx2hh5mhvc0tj45f9xflzcnu0sur3rvay](https://mempool.space/address/bc1qk3m62hx2hh5mhvc0tj45f9xflzcnu0sur3rvay).
 
 <p align="center">
-    <img width="1000" height="460" src="/assets/tocozu.webp" />
+    <img src="/assets/tocozu.webp" />
 </p>
 
 ### New Find 4/9/2025
@@ -69,11 +69,11 @@ Here’s the link to the wallet: [bc1qk3m62hx2hh5mhvc0tj45f9xflzcnu0sur3rvay](ht
 After a week of non-stop wallet searching, I finally found a [wallet](https://mempool.space/address/bc1q29c5m3w4jxtsj4vcd2ccw4t68xm8m7vs5vytu0) with 0.25 bitcoin ($19k). This is my 4th and biggest find of all time.
 
 <p align="center">
-    <img width="1000" height="460" src="https://github.com/user-attachments/assets/57f95d59-9da2-44f0-8f66-dbbe7fe69aee" />
+    <img src="https://github.com/user-attachments/assets/57f95d59-9da2-44f0-8f66-dbbe7fe69aee" />
 </p>
 
 
-## Building the Project
+## Building
 
 1. Open the project file (`CryptoWalletGen.sln`) in Visual Studio or any other compatible C++ compiler.
 2. Install the necessary dependencies and build the project.
@@ -90,6 +90,14 @@ After a week of non-stop wallet searching, I finally found a [wallet](https://me
 ## Todo
 1. Search for missing words in a seed phrase.
 
+## Disclaimer
+
+This program is for educational purposes only. 
+The author is not responsible for any possible actions with any wallets found, using this program. 
+
+## License
+This project is licensed under the [Apache 2.0 License](/LICENSE)
+
 ## Contacts
 If you have any questions or want to share your find or you found some bug in WalletGen work, feel free to message me!
 My Discord: tonydevbtc.
@@ -102,14 +110,12 @@ Contributions are welcome! If you have ideas, bug reports, or want to contribute
 
 ## Donate
 
-I encourage you, when you find a wallet with a balance, to send me a small portion as a thank you. This motivates me to keep working on the program, keep it going, and make it better!
+If this program is useful to you or you have found a wallet with balance, send me a small donat as a thank you. 
+This motivates me to continue working on the program, and make it better!
 
-**BTC:** bc1qeyrshy5ntsguwxe9m8tp2x2yqhddz7ymkj44h9
+![BTC Donate](https://img.shields.io/badge/BTC-bc1qeyrshy5ntsguwxe9m8tp2x2yqhddz7ymkj44h9-yellow.svg?logo=bitcoin)
 
-**ETH:** 0x76c2E75B92Eb340f01B378e332FC7d8954893693
+![ETH Donate](https://img.shields.io/badge/ETH-0x76c2E75B92Eb340f01B378e332FC7d8954893693-blue.svg?logo=ethereum)
 
-## License
-This project is licensed under the [Apache 2.0 License](/LICENSE)
+Thank you 🙏
 
-## Topics
-bitcoin, ethereum, crypto, cryptocurrency, crypto seed phrase mining, crypto bruteforce, bitcoin bruteforce, ethereum bruteforce, crypto finder, lost bitcoin, brute force wallet, crypto brute foce, crypto bruteforce, crypto bruteforce wallet, crypto bruteforce key, crypto wallet, crypto wallet recovery, crypto wallet seed generator, crypto wallet seed phrase, crypto wallet tools, wallet finder crypto, wallet recovery seeds, wallet recovery tools.
