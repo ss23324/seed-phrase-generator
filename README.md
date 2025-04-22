@@ -61,7 +61,7 @@ I’ve personally recovered two BTC wallets with a balance. The first had 0.0000
 Here’s the link to the wallet: [bc1qk3m62hx2hh5mhvc0tj45f9xflzcnu0sur3rvay](https://mempool.space/address/bc1qk3m62hx2hh5mhvc0tj45f9xflzcnu0sur3rvay).
 
 <p align="center">
-    <img src="/assets/tocozu.webp" />
+    <img width="860" src="/assets/tocozu.webp" />
 </p>
 
 ### New Find 4/9/2025
@@ -69,7 +69,7 @@ Here’s the link to the wallet: [bc1qk3m62hx2hh5mhvc0tj45f9xflzcnu0sur3rvay](ht
 After a week of non-stop wallet searching, I finally found a [wallet](https://mempool.space/address/bc1q29c5m3w4jxtsj4vcd2ccw4t68xm8m7vs5vytu0) with 0.25 bitcoin ($19k). This is my 4th and biggest find of all time.
 
 <p align="center">
-    <img src="https://github.com/user-attachments/assets/57f95d59-9da2-44f0-8f66-dbbe7fe69aee" />
+    <img width="860" src="https://github.com/user-attachments/assets/57f95d59-9da2-44f0-8f66-dbbe7fe69aee" />
 </p>
 
 
