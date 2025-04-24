@@ -1,6 +1,34 @@
 #include "utils.h"
 
 
+std::string base58_encode(const std::vector<uint8_t>& input) {
+    const std::string base58_chars = "123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz";
+    std::string result = "";
+
+    int carry;
+    for (size_t i = 0; i < input.size(); ++i) {
+        carry = input[i];
+        for (size_t j = result.size(); j > 0; --j) {
+            carry += 256 * result[j - 1];
+            result[j - 1] = carry % 58;
+            carry /= 58;
+        }
+        while (carry) {
+            result.insert(result.begin(), carry % 58);
+            carry /= 58;
+        }
+    }
+
+    std::string encoded = "";
+    for (size_t i = 0; i < result.size(); ++i) {
+        encoded += base58_chars[result[i]];
+    }
+
+    return encoded;
+}
+
+
+
 std::string keccak256(const std::string& input) {
     unsigned char hash[SHA256_DIGEST_LENGTH];
     SHA256_CTX sha256;
@@ -21,7 +49,6 @@ std::vector<unsigned char> ripemd160(const std::vector<unsigned char>& data) {
     RIPEMD160_Init(&ripemd160Context);
     RIPEMD160_Update(&ripemd160Context, data.data(), data.size());
     RIPEMD160_Final(hash, &ripemd160Context);
-
     return std::vector<unsigned char>(hash, hash + RIPEMD160_DIGEST_LENGTH);
 }
 
@@ -31,19 +58,18 @@ std::vector<unsigned char> sha256(const std::vector<unsigned char>& data) {
     SHA256_Init(&sha256Context);
     SHA256_Update(&sha256Context, data.data(), data.size());
     SHA256_Final(hash, &sha256Context);
-
     return std::vector<unsigned char>(hash, hash + SHA256_DIGEST_LENGTH);
 }
 
-std::vector<unsigned char> hmacSha512(const std::string& key, const std::string& message) {
-    unsigned char* result;
+std::vector<unsigned char> hmac_sha512(const std::vector<unsigned char>& key, const std::vector<unsigned char>& data) {
     unsigned int len = SHA512_DIGEST_LENGTH;
-
-    result = HMAC(EVP_sha512(), key.c_str(), key.length(),
-        reinterpret_cast<const unsigned char*>(message.c_str()), message.length(),
-        nullptr, &len);
-
-    return std::vector<unsigned char>(result, result + len);
+    std::vector<unsigned char> result(len);
+    HMAC_CTX* ctx = HMAC_CTX_new();
+    HMAC_Init_ex(ctx, key.data(), key.size(), EVP_sha512(), nullptr);
+    HMAC_Update(ctx, data.data(), data.size());
+    HMAC_Final(ctx, result.data(), &len);
+    HMAC_CTX_free(ctx);
+    return result;
 }
 
 std::vector<int> create_bech32_checksum(const std::vector<int>& data)
@@ -118,15 +144,18 @@ std::string bech32_encode(const std::vector<unsigned char>& data) {
 
 
 std::vector<uint8_t> mnemonic_to_seed(const std::string& mnemonic, const std::string& passphrase) {
-    unsigned int len = SHA256_DIGEST_LENGTH;
-    auto result = HMAC_CTX_new();
-    HMAC_Init_ex(result, mnemonic.c_str(), mnemonic.length(), EVP_sha256(), NULL);
-    HMAC_Update(result, (const unsigned char*)passphrase.c_str(), passphrase.length());
-    unsigned char hash[SHA256_DIGEST_LENGTH];
-    HMAC_Final(result, hash, &len);
-    HMAC_CTX_free(result);
+    std::string salt = "mnemonic" + passphrase;
+    std::vector<uint8_t> seed(64);
 
-    return std::vector<uint8_t>(hash, hash + len);
+    PKCS5_PBKDF2_HMAC(
+        mnemonic.c_str(), mnemonic.size(),
+        reinterpret_cast<const unsigned char*>(salt.c_str()), salt.size(),
+        2048, EVP_sha512(),
+        seed.size(), seed.data()
+    );
+
+    return seed;
+
 }
 
 std::string bytearray2hex(const std::vector<uint8_t>& byteArray) {

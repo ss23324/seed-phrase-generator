@@ -1,17 +1,16 @@
 #pragma once
 
-
 #include <string>
+#include <string_view>
+#include <iostream>
 #include <vector>
+#include <unordered_map>
+#include <fstream>
 
 #include <Windows.h>
 #include <Wininet.h>
 #include <WinSock2.h>
 
-#include <json/json.h>
-
-#pragma comment (lib, "Wininet.lib")
-#pragma comment (lib, "jsoncpp.lib")
 
 #define CHECKER_ERROR_FAILED 1
 #define CHECKER_ERROR_BUSY 2
@@ -21,6 +20,9 @@
 #define WAL_TYPE_BTC 0
 #define WAL_TYPE_EVM 1
 
+
+#define BTC_WAL_DATABASE_NAME "btc_database.txt"
+#define EVM_WAL_DATABASE_NAME "evm_database.txt"
 
 struct wallet_data {
     std::string address;
@@ -32,18 +34,33 @@ struct wallet_data {
 };
 
 
+static class wallets_data_base {
+public:
+    static bool btc_database_exists();
+    static bool load_btc_database();
+    static std::string get_btc_balance(std::string address);
+
+    static bool evm_database_exists();
+    static bool load_evm_database();
+    static std::string get_evm_balance(std::string address);
+
+private:
+
+    static std::unordered_map<std::string, std::string> btc_wallets_databases[2];
+    static std::unordered_map<std::string, std::string> eth_wallets_databases[2];
+
+};
+
+
 class wallet_checker {
 public:
-    bool initialize();
+    bool initialize(int way = 0);
 
     wallet_data get_wallet_data(std::string address, int type);
 
 private:
     bool check_connection();
-    json request_btc_balance(std::string address);
-    json request_eth_balance(std::string address);
-    json request_bnb_balance(std::string address);
-    json request_matic_balance(std::string address);
+    int way;
 };
 
 
